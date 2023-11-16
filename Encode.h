@@ -96,12 +96,7 @@ public:
         encode += " ";
         continue;
       }
-      // encode += bridge(KEY_ARRAY[x], PLAINTEXT_ARRAY[i]);
-      // x++;
-      // if (x >= key_length) {
-      //   x = 0;
-      // }
-      // tmp < 65 || tmp > 90
+
       else if (tmp >= 33 && tmp <= 64) {
         encode += PLAINTEXT_ARRAY[i];
         continue;
@@ -120,7 +115,7 @@ public:
       else {
 
         encode += bridge(KEY_ARRAY[x], PLAINTEXT_ARRAY[i]);
-        x++; // problem line
+        x++;
         if (x >= key_length) {
           x = 0;
         }
