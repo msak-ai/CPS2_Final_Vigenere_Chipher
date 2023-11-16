@@ -6,7 +6,7 @@ using namespace std;
 int main() {
 
   bool isRunning = true;
-  // while (isRunning) {
+  
   int input;
   string plainText;
   string key;
@@ -53,7 +53,7 @@ int main() {
   } else {
     cout << "Invalid input!" << endl;
   }
-  // }
+  
   cout << endl;
   cout << "Exited" << endl;
   return 0;
